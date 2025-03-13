@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title>ミギー漢字</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+        }
+
+      
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            transition: all 0.3s ease;
+            z-index:10000 ;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #FF8E09;
+        }
+    
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .secciones-button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .secciones-button:hover {
+            background-color: #FF8E09;
+        }
+
+        .kanji-container {
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+         .kanji-container:hover .kanji-info {
+         opacity: 0;
+         }
+     .kanji-item:hover{
+            display: block;
+      }
+   
+
+
+        .bushu-item {
+border: 2px solid #FFCD08;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+              margin: 40px;
+     position: relative;
+        }
+
+        .bushu-item:hover {
+  transform: scale(1.05); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+    
+
+        }
+
+
+
+        .bushu-item h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .bushu-item p {
+            font-size: 18px;
+        }
+
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-to-top:hover {
+            background-color: #FF5A01;
+        }
+    </style>
+</head>
+<body><button id="scrollToTopBtn">&#8593;</button>
+
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+    <header>
+        <img src="漢字.png"></img>
+        <h3>検索</h3>
+    </header>
+    <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索部首漢字english.html">english</a>
+        <div style="text-align: center;">
+        <a href="file:///C:/Users/matg_/Downloads/aa/ミギー漢字.html" class="secciones-button">ホームページ(pagina principal)</a>
+        <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索漢字.html" class="secciones-button">検索(buscador)</a>
+        <a href="" class="secciones-button">オプション(opciones)</a>
+          <div id="kanji-container" class="kanji-container">
+            <div style="text-align: center;">
+            <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索漢字.html" class="secciones-button">lista por grado</a>
+            <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索他ページ漢字辞典.html" class="secciones-button">otras paginas</a>
+            <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索部首漢字.html" class="secciones-button">lista de radicales</a>
+            <a href="" class="secciones-button">lista por jlpt</a>
+            <a href="" class="secciones-button">lista por radicales</a>
+            <a href="" class="secciones-button">lista por numero de trazos</a>
+            </div>
+            <h1>部首リスト</h1>
+            <h2>radicales de 1 trazo</h2>
+            <div id="radicales-一" class="bushu-item">
+            <h1>一</h1>
+            <p>uno</p>
+            <p>kanjis que traen 一</p>
+            <h2>上、下、一</h2>
+            </div>
+    </div>
+        <header>
+          ありがとうございました！ gracias por aprender muchos kanjis
+             <a href="#" class="back-to-top">Volver al inicio</a>
+        </header>
+    </div>
+</body>
+</html>

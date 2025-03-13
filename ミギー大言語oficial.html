@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミギー大言語</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+        }
+
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            transition: all 0.3s ease;
+            z-index:10000;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #FF8E09;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .secciones-button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .secciones-button:hover {
+            background-color: #FF8E09;
+        }
+
+        .kanji-container {
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .kanji-container:hover .kanji-info {
+            opacity: 0;
+        }
+
+        .kanji-item:hover {
+            display: block;
+        }
+
+        .bushu-item {
+            border: 2px solid #FFCD08;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 40px;
+            position: relative;
+        }
+
+        .bushu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: white;
+        }
+
+        .bushu-item h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .bushu-item p {
+            font-size: 18px;
+        }
+
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-to-top:hover {
+            background-color: #FF5A01;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #ff0000;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 15%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 15%;
+            border: 1px solid #ddd;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            transform: translateY(-5px);
+            border-radius: 15%;
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ff6a00;
+        }
+    </style>
+</head>
+<body>
+    <button id="scrollToTopBtn">&#8593;</button>
+
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+
+    <header>
+        <img src="ミギー大言語イメージ.png" alt="Imagen de Migii"></img>
+        <h1>ミギー大言語</h1>
+    </header>
+
+    <div style="text-align: center;">
+        <img src="やあ！.png" alt="Saludo"></img>
+    </div>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="" class="secciones-button">ホームページ(pagina principal)</a>
+        <a href="" class="secciones-button">言語(idiomas)</a>
+        <div id="kanji-container" class="kanji-container">
+            <div style="text-align: center;">
+                <div class="dropdown">
+                    <button class="dropbtn">América ▼</button>
+                    <div class="dropdown-content">
+                        <a href="">
+                            <img src="伯剌西爾のイメージ.png" alt="Bandera Brasil" style="width: 50px; margin-right: 50px;"> Portugués Brasileño
+                        </a>
+                        <a href="">
+                            <img src="智利のイメージ.png" alt="Bandera Chile" style="width: 50px; margin-right: 50px;"> Español Chileno
+                        </a>
+                            <a href="">
+                                <img src="亜爾然丁のイメージ.png" alt="Bandera argentina" style="width: 50px; margin-right: 50px;"> Español argentino
+                            </a>
+                            <a href="">
+                                <img src="ボリビアのイメージ.png" alt="Bandera bolivia" style="width: 50px; margin-right: 50px;"> Español boliviano 
+                            </a>
+                    </div>
+            </div>
+            <h1>las leguas americanas y indigenas</h1>
+            <p>iclullendo variantes del Español o lenguas como el nahuatl o el maya o el rapanui</p>
+
+        </div>
+    </div>
+
+    <header>
+        ありがとうございました！ gracias por aprender muchos kanjis
+        <a href="#" class="back-to-top">Volver al inicio</a>
+    </header>
+</body>
+</html>

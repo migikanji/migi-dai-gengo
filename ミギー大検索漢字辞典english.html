@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミギー大検索漢字english</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+        }
+
+      
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            transition: all 0.3s ease;
+            z-index:10000 ;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #FF8E09;
+        }
+    
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .secciones-button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .secciones-button:hover {
+            background-color: #FF8E09;
+        }
+
+        .kanji-container {
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+         .kanji-container:hover .kanji-info {
+         opacity: 0;
+         }
+     .kanji-item:hover{
+            display: block;
+      }
+   
+
+
+        .kanji-item {
+border: 2px solid #FFCD08;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+              margin: 40px;
+     position: relative;
+        }
+
+        .kanji-item:hover {
+  transform: scale(1.05); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+    
+
+        }
+
+
+
+        .kanji-item h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .kanji-item p {
+            font-size: 18px;
+        }
+
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-to-top:hover {
+            background-color: #FF5A01;
+        }
+    </style>
+</head>
+<body><button id="scrollToTopBtn">&#8593;</button>
+
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+    <header>
+        <img src="漢字.png"></img>
+        <h3>検索</h3>
+    </header>
+    <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索漢字.html">español</a>
+    <div style="text-align: center;">
+        <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大漢字辞典english.html" class="secciones-button">ホームページ(home page)</a>
+        <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索漢字辞典english.html" class="secciones-button">検索(search)</a>
+        <a href="" class="secciones-button">オプション(options)</a>
+          <div id="kanji-container" class="kanji-container">
+            <div style="text-align: center;">
+                <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索他漢字english.html" class="secciones-button">Another pages</a>
+                <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索部首漢字english.html" class="secciones-button">list of radicals</a>
+                <a href="" class="secciones-button">list by jlpt</a>
+                <a href="" class="secciones-button">list by  radicals</a>
+                <a href="" class="secciones-button">lista by number of stroke</a>
+                </div>
+            <h1>1小</h1>
+           <p>The Jōyō Kanji (常用漢字) list is the list from the Japanese Ministry of Education that includes the kanji used in daily life. It consists of 2,136 kanji.</p>
+           <h2>First grade of elementary school: 80 kanji.</h2>
+                <div id="kanji-一" class="kanji-item">
+            <h1>一</h1>
+            <p>alternatives:壹,弌,𠤪,𭍶 </p>
+            <p>音：イチ、イツ 訓：ひと（つ）意味:one</p>
+
+        </div>
+   <div id="kanji-右" class="kanji-item">
+            <h1>右</h1>
+            <p>音：ウ、ユウ 訓：みぎ 意味:right</p>
+</div>
+        <div id="kanji-雨" class="kanji-item">
+            <h1>雨</h1>
+             <p>alternatives:㲾,𠕒,𠕘,𠕲</p>
+            <p>音：ウ 訓：あめ、～あま～ 意味:rain</p>
+           </div>
+            <div id="kanji-円" class="kanji-item">
+            <h1>円</h1>
+            <p>alternatives:圓,圆 </p>
+            <p>音：エン 訓：まる（い）意味:yen,cicle</p>
+        </div>
+        <div id="kanji-王" class="kanji-item">
+            <h1>王</h1>
+           <p>alternatives:𠙻</p>
+            <p>音：オウ 訓：（表外）おおきみ 意味:king</p>
+        </div>
+        <div id="kanji-音" class="kanji-item">
+            <h1>音</h1>
+           <p>alternative:（音󠄁）<img src="漢字およ.png"><img></p>
+            <p>音：オン、イン 訓：おと 意味:sound</p> 
+                      </div>                                                                   
+            <div id="kanji-下" class="kanji-item">
+            <h1>下</h1>
+            <p>alternatives:丅,𠄟</p>
+            <p>音：カ、ゲ 訓：した、しも、さ（げる、がる）、くだ（す、る、さる）、お（りる、ろす） 意味:down,below,inferior</p>
+        </div>
+        <div id="kanji-火" class="kanji-item">
+            <h1>火</h1>
+            <p>音：カ 訓：ひ、～び 意味:fire</p>
+        </div>
+        <div id="kanji-花" class="kanji-item">
+            <h1>花</h1>
+            <p>alternatives:華,华,蘤,花󠄁,芲,𠌶</p>
+            <p>音：カ、ケ 訓：はな 意味:flower</p>
+        </div>
+            <div id="kanji-貝" class="kanji-item">
+            <h1>貝</h1>
+            <p>alternative:贝</p>
+            <p>音：（表外）バイ 訓：かい 意味:shell</p>
+        </div>
+        <div id="kanji-学" class="kanji-item">
+            <h1>学</h1>
+            <p>alternative:學</p>
+            <p>音：ガク 訓：まな・ぶ 意味:learn</p>
+        </div>
+        <div id="kanji-気" class="kanji-item">
+            <h1>気</h1>
+            <p>alternatives:氣,气</p>
+            <p>音：いき 訓：キ、ケ 意味:spirit,feeling</p>
+            </div>
+            <div id="kanji-九" class="kanji-item">
+                <h1>九</h1>
+                <p>alternatives:𠔀,𢌬,𣲄</p>
+                <p>音：ク、キュウ 訓:ここの（つ）意味:nine</p>
+            </div>
+       <div id="kanji-休" class="kanji-item">
+                <h1>休</h1>
+                <p>音：キュウ 訓：やす（む） 意味:rest</p>
+            </div>
+            <div id="kanji-玉" class="kanji-item">
+                <h1>玉</h1>
+                 <p>alternatives:𤣩,𠀛</p>
+                <p>音：ギョク 訓：たま、～だま～ 意味:ball,jem</p>
+               </div>
+                <div id="kanji-金" class="kanji-item">
+                <h1>金</h1>
+                <p>alternatives:𠊍,𨤾,𠈘,𠉓</p>
+                <p>音キン、コン訓：（お）かね意味:gold,money</p>
+            </div>
+            <div id="kanji-空" class="kanji-item">
+                <h1>空</h1>
+               <p>alternativas:𠀝,𫞹,𰁕,𢦉</p>
+                <p>音：クウ 訓：そら、から、あ（く、ける）意味:empty,sky</p>
+            </div>
+            <div id="kanji-月" class="kanji-item">
+                <h1>月</h1>
+               <p>alternatives:𡇹,𠥱,夕</p>
+                <p>音：ゲツ、ガツ 訓：つき 意味:month,moon
+                </p> 
+            </div>                                                                   
+                <div id="kanji-犬" class="kanji-item">
+                <h1>犬</h1>
+                <p>音：ケン 訓：いぬ 意味:dog</p>
+            </div>
+            <div id="kanji-見" class="kanji-item">
+                <h1>見</h1>
+                <p>alternative:见</p>
+                <p>音：ケン 訓：み（る、える、せる） 意味:look</p>
+            </div>
+            <div id="kanji-五" class="kanji-item">
+                <h1>五</h1>
+                <p>alternatives:㐅,𠄡,𫝀</p>
+                <p>音：ゴ 訓：いつ（つ） 意味:five</p>
+                </div>
+                <div id="kanji-口" class="kanji-item">
+                <h1>口</h1>
+                <p>alternatives:𠙵,𠮚,囗</p>
+                <p>音：ク、コウ 訓：くち 意味:mouth,opening,box</p>
+            </div>
+            <div id="kanji-校" class="kanji-item">
+                <h1>校</h1>
+                <p>alternative:(校󠄁)<img src="校の古い.png"></img></p>
+                <p>音：コウ 訓：（表外）あぜ、かせ 意味:school</p>
+            </div>
+            <div id="kanji-左" class="kanji-item">
+                <h1>左</h1>
+                <p>alternatives:</p>
+                <p>音：サ 訓：ひだり 意味:left</p>
+        </div>
+
+        </div>
+    </div>
+        <header>
+          ありがとうございました！ gracias por aprender muchos kanjis
+             <a href="#" class="back-to-top">Volver al inicio</a>
+        </header>
+    </div>
+</body>
+</html>

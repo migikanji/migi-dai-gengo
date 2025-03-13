@@ -1,0 +1,174 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミギー漢字</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+        }
+
+      
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            transition: all 0.3s ease;
+            z-index:10000 ;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #FF8E09;
+        }
+    
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .secciones-button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #FFCD08;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .secciones-button:hover {
+            background-color: #FF8E09;
+        }
+
+        .kanji-container {
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+         .kanji-container:hover .kanji-info {
+         opacity: 0;
+         }
+     .kanji-item:hover{
+            display: block;
+      }
+   
+
+
+        .kanji-item {
+border: 2px solid #FFCD08;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+              margin: 40px;
+     position: relative;
+        }
+
+        .kanji-item:hover {
+  transform: scale(1.05); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+    
+
+        }
+
+
+
+        .kanji-item h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .kanji-item p {
+            font-size: 18px;
+        }
+
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-to-top:hover {
+            background-color: #FF5A01;
+        }
+    </style>
+</head>
+<body><button id="scrollToTopBtn">&#8593;</button>
+
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+    <header>
+        <img src="漢字.png"></img>
+        <h3>検索</h3>
+    </header>
+    <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索他ページ漢字辞典.html">español</a>
+        <div style="text-align: center;">
+        <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大漢字辞典english.html" class="secciones-button">ホームページ(home)</a>
+        <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索漢字辞典english.html" class="secciones-button">検索(searcher)</a>
+        <a href="" class="secciones-button">オプション(options)</a>
+          <div id="kanji-container" class="kanji-container">
+            <div style="text-align: center;">
+            <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索漢字辞典english.html" class="secciones-button">list by grade</a>
+            <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索他漢字english.html" class="secciones-button">Another pages</a>
+            <a href="file:///C:/Users/matg_/Downloads/aa/ミギー大検索部首漢字english.html" class="secciones-button">list by radicals</a>
+            <a href="" class="secciones-button">list by jlpt</a>
+            <a href="" class="secciones-button">list by radicals</a>
+            <a href="" class="secciones-button">list by number of stroke</a>
+            </div>
+            <h1>他のページ</h1>
+           <p>こんにちは！你好！안녕하세요!Hi! we are ミギー大言語(migii dai gengo) here are web of languages like rusian chinese etc..</p>
+    </div>
+        <header>
+          ありがとうございました！
+             <a href="#" class="back-to-top">back to the start</a>
+        </header>
+    </div>
+</body>
+</html>
